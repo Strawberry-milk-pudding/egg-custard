@@ -1,9 +1,10 @@
 import requests
+import base64
 
 def get_pies():
-    API_KEY = "Secret_1{d0nt_hArdc0de_cr3d5}"
+    API_KEY = "U2VjcmV0XzJ7ZW5jMGQxbmdfaXNfbm90XzNuY3J5cHQxMG59"
     
-    url = 'https://important.api.endpoint.com/pies?key=' + API_KEY
+    url = 'https://important.api.endpoint.com/pies?key=' + base64.b64decode(API_KEY)
 
     try:
         response = requests.get(url)

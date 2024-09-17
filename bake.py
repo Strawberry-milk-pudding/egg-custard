@@ -1,7 +1,9 @@
 import requests
 
 def get_pies():
-    url = 'https://important.api.endpoint.com/pies'
+    API_KEY = "Secret_1{d0nt_hArdc0de_cr3d5}"
+    
+    url = 'https://important.api.endpoint.com/pies?key=' + API_KEY
 
     try:
         response = requests.get(url)

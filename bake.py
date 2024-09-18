@@ -3,7 +3,7 @@ import base64
 
 def get_pies():
     
-    url = 'https://important.api.endpoint.com/no_more_pies
+    url = 'https://important.api.endpoint.com/no_more_pies'
 
     try:
         response = requests.get(url)
